@@ -8,26 +8,45 @@
     <link rel="stylesheet" href="https://pyscript.net/releases/2025.3.1/core.css" />
     <script type="module" src="https://pyscript.net/releases/2025.3.1/core.js"></script>
 
+    <style>
+        body{
+            background-color: rgb(47, 71, 148);
+            text-align: center;
+            color:aliceblue;
+            font-family: Sans-serif;
+        }
+
+    </style>
+
 </head>
 <body>
-    <h1>TV Tea!</h1>
+    <h1 style="font-weight: bold">TV Tea! - 📺</h1>
     <h4>Our Menu:</h4>
 
     <form>
-        <input type="checkbox" id="input1" value="383.00">
-        <label for="Cook's Tea">Cook's Tea ($383.00)</label>
-        <br>
 
+        <div class="box">
+            <input type="checkbox" id="input1" value="383.00">
+            <label for="Cook's Tea">🍳 Cook's Tea ($383.00)</label>
+        </div>
+            <br>
 
-        <input type="checkbox" id="input2" value="532.00">
-        <label for="Rock's Tea">Rock's Tea ($532.00)</label>
-        <br>
+        <div class="box">
+            <input type="checkbox" id="input2" value="532.00">
+            <label for="Rock's Tea">🎸 Rock's Tea ($532.00)</label>
+        </div>
+            <br>
 
-        <input type="checkbox" id="input3" value="298.00">
-        <label for="Monster's Tea">Monster's Tea ($298.00)</label>
-        <br>
+        <div class="box">
+            <input type="checkbox" id="input3" value="298.00">
+            <label for="Monster's Tea">👾 Monster's Tea ($298.00)</label>
+        </div>
+            <br><br>
 
-        <button type="button" py-click="create_order">Order!</button>
+            <button type="button" py-click="create_order" style=
+            "color: rgb(230, 230, 103); background-color: rgb(47, 71, 148); border: 2px solid rgb(230, 230, 103);">
+            Order! ⭐</button>
+            <br><br>
 
     </form>
 

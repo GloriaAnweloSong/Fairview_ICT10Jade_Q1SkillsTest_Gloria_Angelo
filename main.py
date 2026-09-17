@@ -12,5 +12,7 @@ def create_order(e):
     subtotal3 = float(tea3.value) * tea3.checked
 
     subtotal = subtotal1 + subtotal2 + subtotal3
+    vat = subtotal * 0.12
+    total_amount = subtotal + vat
 
-    display(f'You have to pay a total of ${subtotal}', target="ST_output")
+    display(f'Receipt: <br>Subtotal: ${subtotal} <br>Tax: ${vat} <br>Total: ${total_amount}', target="ST_output")
